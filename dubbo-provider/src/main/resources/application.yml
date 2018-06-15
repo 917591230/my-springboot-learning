@@ -1,0 +1,17 @@
+spring:
+    profiles:
+        active: test
+
+    dubbo:
+        scan: cn.clay.dubbo.service
+        application:
+            name: provider
+        registry:
+            address: N/A
+            protocol: dubbo
+        protocol:
+            name: dubbo
+            host: 127.0.0.1
+            port: 28888
+
+
