@@ -20,7 +20,7 @@ import javax.validation.Valid;
 /**
  *      springMVC的{@link RequestMapping#produces()}属性时{@link MediaType#APPLICATION_JSON_VALUE}，MediaType.APPLICATION_JSON_VALUE
  *  该属性可以控制接口接受参数的方式。
- *      spring 校验注解，是jsr303's{@link javax.validation.Valid}一个变体，校验出不合法，将抛出异常.
+ *      spring 校验注解{@link Validated}，是jsr303's{@link javax.validation.Valid}一个变体，校验出不合法，将抛出异常.
  * 例如:用{@link #mytest1(User, BindingResult)} 接口来做测试，当输入用户年龄大于150 会报错误{@code javax.validation.ConstraintViolationException: test.user.age: 年龄不可能超过150岁!}
  */
 @RestController

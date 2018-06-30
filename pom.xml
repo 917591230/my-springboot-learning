@@ -14,6 +14,7 @@
         <module>dubbo-provider</module>
         <module>global-error-handler</module>
         <module>param-verify-jsr303</module>
+        <module>my-ngqualitymdl</module>
     </modules>
     <packaging>pom</packaging>
 

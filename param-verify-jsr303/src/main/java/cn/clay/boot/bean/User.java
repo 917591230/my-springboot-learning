@@ -1,8 +1,11 @@
 package cn.clay.boot.bean;
 
+import org.hibernate.validator.constraints.Email;
+
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -10,11 +13,13 @@ public class User implements Serializable {
     @NotBlank(message = "id不可以为空")
     private String id;
 
-//    @NotBlank(message = "age不可以为空")
+    @NotNull(message = "age不可以为空")
     @Digits(integer =3 , fraction = 0)
     @DecimalMax(value = "150",message = "年龄不可能超过150岁!")
     private Integer age;
 
+    @Email
+    private String email;
     public Integer getAge() {
         return age;
     }
