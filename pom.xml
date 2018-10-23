@@ -15,6 +15,9 @@
         <module>global-error-handler</module>
         <module>param-verify-jsr303</module>
         <module>my-ngqualitymdl</module>
+        <module>elasticsearch6</module>
+        <module>threadpool</module>
+        <module>web</module>
     </modules>
     <packaging>pom</packaging>
 
